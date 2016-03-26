@@ -1,0 +1,1063 @@
+2016/01/24 02:32:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "r=gii".' in C:\OpenServer\domains\yii-blog.test\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\yii-blog.test\framework\web\CWebApplication.php(141): CWebApplication->runController('r=gii')
+#1 C:\OpenServer\domains\yii-blog.test\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\yii-blog.test\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/index.php?r=r=gii
+---
+2016/01/24 02:34:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to find the code you requested.' in C:\OpenServer\domains\yii-blog.test\framework\gii\CCodeGenerator.php:90
+Stack trace:
+#0 C:\OpenServer\domains\yii-blog.test\framework\web\actions\CInlineAction.php(49): CCodeGenerator->actionCode()
+#1 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#2 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#3 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 C:\OpenServer\domains\yii-blog.test\framework\web\CWebApplication.php(282): CController->run('code')
+#5 C:\OpenServer\domains\yii-blog.test\framework\web\CWebApplication.php(141): CWebApplication->runController('gii/model/code')
+#6 C:\OpenServer\domains\yii-blog.test\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 C:\OpenServer\domains\yii-blog.test\blog\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/blog/index.php?r=gii/model/code&id=0
+HTTP_REFERER=http://yii-blog.test/blog/index.php?r=gii/model/index
+---
+2016/01/26 16:35:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "blogrecord/index".' in C:\OpenServer\domains\yii-blog.test\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\yii-blog.test\framework\web\CWebApplication.php(141): CWebApplication->runController('blogrecord/inde...')
+#1 C:\OpenServer\domains\yii-blog.test\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\yii-blog.test\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/index.php/blogrecord/index
+---
+2016/01/26 17:18:16 [error] [php] include(CPostList.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (C:\OpenServer\domains\yii-blog.test\framework\YiiBase.php:432)
+Stack trace:
+#0 unknown(0): spl_autoload_call()
+#1 C:\OpenServer\domains\yii-blog.test\framework\YiiBase.php(303): class_exists()
+#2 C:\OpenServer\domains\yii-blog.test\framework\web\CWidgetFactory.php(146): import()
+#3 C:\OpenServer\domains\yii-blog.test\framework\web\CBaseController.php(146): CWidgetFactory->createWidget()
+#4 C:\OpenServer\domains\yii-blog.test\framework\web\CBaseController.php(197): SiteController->createWidget()
+#5 C:\OpenServer\domains\yii-blog.test\blog\protected\views\site\index.php(13): SiteController->beginWidget()
+#6 C:\OpenServer\domains\yii-blog.test\framework\web\CBaseController.php(126): require()
+#7 C:\OpenServer\domains\yii-blog.test\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#8 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(869): SiteController->renderFile()
+#9 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(782): SiteController->renderPartial()
+#10 C:\OpenServer\domains\yii-blog.test\blog\protected\controllers\SiteController.php(32): SiteController->render()
+#11 C:\OpenServer\domains\yii-blog.test\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#12 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(308): CInlineAction->runWithParams()
+#13 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(286): SiteController->runAction()
+#14 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#15 C:\OpenServer\domains\yii-blog.test\framework\web\CWebApplication.php(282): SiteController->run()
+#16 C:\OpenServer\domains\yii-blog.test\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#17 C:\OpenServer\domains\yii-blog.test\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#18 C:\OpenServer\domains\yii-blog.test\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/index.php/site/index
+in C:\OpenServer\domains\yii-blog.test\blog\protected\views\site\index.php (13)
+in C:\OpenServer\domains\yii-blog.test\blog\protected\controllers\SiteController.php (32)
+in C:\OpenServer\domains\yii-blog.test\blog\index.php (13)
+2016/01/26 17:20:33 [error] [php] include(widgets/CPostList.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (C:\OpenServer\domains\yii-blog.test\framework\YiiBase.php:432)
+Stack trace:
+#0 unknown(0): spl_autoload_call()
+#1 C:\OpenServer\domains\yii-blog.test\framework\YiiBase.php(303): class_exists()
+#2 C:\OpenServer\domains\yii-blog.test\framework\web\CWidgetFactory.php(146): import()
+#3 C:\OpenServer\domains\yii-blog.test\framework\web\CBaseController.php(146): CWidgetFactory->createWidget()
+#4 C:\OpenServer\domains\yii-blog.test\framework\web\CBaseController.php(197): SiteController->createWidget()
+#5 C:\OpenServer\domains\yii-blog.test\blog\protected\views\site\index.php(13): SiteController->beginWidget()
+#6 C:\OpenServer\domains\yii-blog.test\framework\web\CBaseController.php(126): require()
+#7 C:\OpenServer\domains\yii-blog.test\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#8 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(869): SiteController->renderFile()
+#9 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(782): SiteController->renderPartial()
+#10 C:\OpenServer\domains\yii-blog.test\blog\protected\controllers\SiteController.php(32): SiteController->render()
+#11 C:\OpenServer\domains\yii-blog.test\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#12 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(308): CInlineAction->runWithParams()
+#13 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(286): SiteController->runAction()
+#14 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#15 C:\OpenServer\domains\yii-blog.test\framework\web\CWebApplication.php(282): SiteController->run()
+#16 C:\OpenServer\domains\yii-blog.test\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#17 C:\OpenServer\domains\yii-blog.test\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#18 C:\OpenServer\domains\yii-blog.test\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/index.php/site/index
+in C:\OpenServer\domains\yii-blog.test\blog\protected\views\site\index.php (13)
+in C:\OpenServer\domains\yii-blog.test\blog\protected\controllers\SiteController.php (32)
+in C:\OpenServer\domains\yii-blog.test\blog\index.php (13)
+2016/01/26 17:21:19 [error] [exception.CException] exception 'CException' with message 'Неправильный алиас "C:/OpenServer/domains/yii-blog.testwidgets/CPostList". Убедитесь, что он указывает на существующую директорию или файл.' in C:\OpenServer\domains\yii-blog.test\framework\YiiBase.php:348
+Stack trace:
+#0 C:\OpenServer\domains\yii-blog.test\framework\web\CWidgetFactory.php(146): YiiBase::import('C:/OpenServer/d...', true)
+#1 C:\OpenServer\domains\yii-blog.test\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'C:/OpenServer/d...', Array)
+#2 C:\OpenServer\domains\yii-blog.test\framework\web\CBaseController.php(197): CBaseController->createWidget('C:/OpenServer/d...', Array)
+#3 C:\OpenServer\domains\yii-blog.test\blog\protected\views\site\index.php(13): CBaseController->beginWidget('C:/OpenServer/d...', Array)
+#4 C:\OpenServer\domains\yii-blog.test\framework\web\CBaseController.php(126): require('C:\OpenServer\d...')
+#5 C:\OpenServer\domains\yii-blog.test\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\OpenServer\d...', NULL, true)
+#6 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(869): CBaseController->renderFile('C:\OpenServer\d...', NULL, true)
+#7 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#8 C:\OpenServer\domains\yii-blog.test\blog\protected\controllers\SiteController.php(32): CController->render('index')
+#9 C:\OpenServer\domains\yii-blog.test\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#10 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\OpenServer\domains\yii-blog.test\framework\web\CWebApplication.php(282): CController->run('index')
+#14 C:\OpenServer\domains\yii-blog.test\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#15 C:\OpenServer\domains\yii-blog.test\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 C:\OpenServer\domains\yii-blog.test\blog\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/blog/index.php/site/index
+HTTP_REFERER=http://yii-blog.test/blog/index.php/site/login
+---
+2016/01/26 17:21:54 [error] [exception.CException] exception 'CException' with message 'Неправильный алиас "C:/OpenServer/domains/yii-blog.test/blog/widgets/CPostList". Убедитесь, что он указывает на существующую директорию или файл.' in C:\OpenServer\domains\yii-blog.test\framework\YiiBase.php:348
+Stack trace:
+#0 C:\OpenServer\domains\yii-blog.test\framework\web\CWidgetFactory.php(146): YiiBase::import('C:/OpenServer/d...', true)
+#1 C:\OpenServer\domains\yii-blog.test\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'C:/OpenServer/d...', Array)
+#2 C:\OpenServer\domains\yii-blog.test\framework\web\CBaseController.php(197): CBaseController->createWidget('C:/OpenServer/d...', Array)
+#3 C:\OpenServer\domains\yii-blog.test\blog\protected\views\site\index.php(13): CBaseController->beginWidget('C:/OpenServer/d...', Array)
+#4 C:\OpenServer\domains\yii-blog.test\framework\web\CBaseController.php(126): require('C:\OpenServer\d...')
+#5 C:\OpenServer\domains\yii-blog.test\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\OpenServer\d...', NULL, true)
+#6 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(869): CBaseController->renderFile('C:\OpenServer\d...', NULL, true)
+#7 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#8 C:\OpenServer\domains\yii-blog.test\blog\protected\controllers\SiteController.php(32): CController->render('index')
+#9 C:\OpenServer\domains\yii-blog.test\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#10 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\OpenServer\domains\yii-blog.test\framework\web\CWebApplication.php(282): CController->run('index')
+#14 C:\OpenServer\domains\yii-blog.test\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#15 C:\OpenServer\domains\yii-blog.test\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 C:\OpenServer\domains\yii-blog.test\blog\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/blog/index.php/site/index
+HTTP_REFERER=http://yii-blog.test/blog/index.php/site/login
+---
+2016/01/26 17:22:29 [error] [php] include(/widgets/CPostList.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (C:\OpenServer\domains\yii-blog.test\framework\YiiBase.php:432)
+Stack trace:
+#0 unknown(0): spl_autoload_call()
+#1 C:\OpenServer\domains\yii-blog.test\framework\YiiBase.php(303): class_exists()
+#2 C:\OpenServer\domains\yii-blog.test\framework\web\CWidgetFactory.php(146): import()
+#3 C:\OpenServer\domains\yii-blog.test\framework\web\CBaseController.php(146): CWidgetFactory->createWidget()
+#4 C:\OpenServer\domains\yii-blog.test\framework\web\CBaseController.php(197): SiteController->createWidget()
+#5 C:\OpenServer\domains\yii-blog.test\blog\protected\views\site\index.php(13): SiteController->beginWidget()
+#6 C:\OpenServer\domains\yii-blog.test\framework\web\CBaseController.php(126): require()
+#7 C:\OpenServer\domains\yii-blog.test\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#8 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(869): SiteController->renderFile()
+#9 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(782): SiteController->renderPartial()
+#10 C:\OpenServer\domains\yii-blog.test\blog\protected\controllers\SiteController.php(32): SiteController->render()
+#11 C:\OpenServer\domains\yii-blog.test\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#12 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(308): CInlineAction->runWithParams()
+#13 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(286): SiteController->runAction()
+#14 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#15 C:\OpenServer\domains\yii-blog.test\framework\web\CWebApplication.php(282): SiteController->run()
+#16 C:\OpenServer\domains\yii-blog.test\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#17 C:\OpenServer\domains\yii-blog.test\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#18 C:\OpenServer\domains\yii-blog.test\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/index.php/site/index
+in C:\OpenServer\domains\yii-blog.test\blog\protected\views\site\index.php (13)
+in C:\OpenServer\domains\yii-blog.test\blog\protected\controllers\SiteController.php (32)
+in C:\OpenServer\domains\yii-blog.test\blog\index.php (13)
+2016/01/26 17:22:52 [error] [exception.CException] exception 'CException' with message 'Неправильный алиас "../widgets/CPostList". Убедитесь, что он указывает на существующую директорию или файл.' in C:\OpenServer\domains\yii-blog.test\framework\YiiBase.php:348
+Stack trace:
+#0 C:\OpenServer\domains\yii-blog.test\framework\web\CWidgetFactory.php(146): YiiBase::import('../widgets/CPos...', true)
+#1 C:\OpenServer\domains\yii-blog.test\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), '../widgets/CPos...', Array)
+#2 C:\OpenServer\domains\yii-blog.test\framework\web\CBaseController.php(197): CBaseController->createWidget('../widgets/CPos...', Array)
+#3 C:\OpenServer\domains\yii-blog.test\blog\protected\views\site\index.php(13): CBaseController->beginWidget('../widgets/CPos...', Array)
+#4 C:\OpenServer\domains\yii-blog.test\framework\web\CBaseController.php(126): require('C:\OpenServer\d...')
+#5 C:\OpenServer\domains\yii-blog.test\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\OpenServer\d...', NULL, true)
+#6 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(869): CBaseController->renderFile('C:\OpenServer\d...', NULL, true)
+#7 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#8 C:\OpenServer\domains\yii-blog.test\blog\protected\controllers\SiteController.php(32): CController->render('index')
+#9 C:\OpenServer\domains\yii-blog.test\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#10 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\OpenServer\domains\yii-blog.test\framework\web\CWebApplication.php(282): CController->run('index')
+#14 C:\OpenServer\domains\yii-blog.test\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#15 C:\OpenServer\domains\yii-blog.test\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 C:\OpenServer\domains\yii-blog.test\blog\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/blog/index.php/site/index
+HTTP_REFERER=http://yii-blog.test/blog/index.php/site/login
+---
+2016/01/26 17:25:06 [error] [exception.CException] exception 'CException' with message 'Неправильный алиас "blog.widgets.CPostList". Убедитесь, что он указывает на существующую директорию или файл.' in C:\OpenServer\domains\yii-blog.test\framework\YiiBase.php:348
+Stack trace:
+#0 C:\OpenServer\domains\yii-blog.test\framework\web\CWidgetFactory.php(146): YiiBase::import('blog.widgets.CP...', true)
+#1 C:\OpenServer\domains\yii-blog.test\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'blog.widgets.CP...', Array)
+#2 C:\OpenServer\domains\yii-blog.test\framework\web\CBaseController.php(180): CBaseController->createWidget('blog.widgets.CP...', Array)
+#3 C:\OpenServer\domains\yii-blog.test\blog\protected\views\site\index.php(13): CBaseController->widget('blog.widgets.CP...', Array)
+#4 C:\OpenServer\domains\yii-blog.test\framework\web\CBaseController.php(126): require('C:\OpenServer\d...')
+#5 C:\OpenServer\domains\yii-blog.test\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\OpenServer\d...', NULL, true)
+#6 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(869): CBaseController->renderFile('C:\OpenServer\d...', NULL, true)
+#7 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#8 C:\OpenServer\domains\yii-blog.test\blog\protected\controllers\SiteController.php(32): CController->render('index')
+#9 C:\OpenServer\domains\yii-blog.test\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#10 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\OpenServer\domains\yii-blog.test\framework\web\CWebApplication.php(282): CController->run('index')
+#14 C:\OpenServer\domains\yii-blog.test\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#15 C:\OpenServer\domains\yii-blog.test\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 C:\OpenServer\domains\yii-blog.test\blog\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/blog/index.php/site/index
+HTTP_REFERER=http://yii-blog.test/blog/index.php/site/login
+---
+2016/01/26 17:25:17 [error] [exception.CException] exception 'CException' with message 'Псевдоним "zii.widgets.CPostList" неверен. Убедитесь, что он указывает на существующий PHP файл.' in C:\OpenServer\domains\yii-blog.test\framework\YiiBase.php:323
+Stack trace:
+#0 C:\OpenServer\domains\yii-blog.test\framework\web\CWidgetFactory.php(146): YiiBase::import('zii.widgets.CPo...', true)
+#1 C:\OpenServer\domains\yii-blog.test\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'zii.widgets.CPo...', Array)
+#2 C:\OpenServer\domains\yii-blog.test\framework\web\CBaseController.php(180): CBaseController->createWidget('zii.widgets.CPo...', Array)
+#3 C:\OpenServer\domains\yii-blog.test\blog\protected\views\site\index.php(13): CBaseController->widget('zii.widgets.CPo...', Array)
+#4 C:\OpenServer\domains\yii-blog.test\framework\web\CBaseController.php(126): require('C:\OpenServer\d...')
+#5 C:\OpenServer\domains\yii-blog.test\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\OpenServer\d...', NULL, true)
+#6 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(869): CBaseController->renderFile('C:\OpenServer\d...', NULL, true)
+#7 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#8 C:\OpenServer\domains\yii-blog.test\blog\protected\controllers\SiteController.php(32): CController->render('index')
+#9 C:\OpenServer\domains\yii-blog.test\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#10 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\OpenServer\domains\yii-blog.test\framework\web\CWebApplication.php(282): CController->run('index')
+#14 C:\OpenServer\domains\yii-blog.test\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#15 C:\OpenServer\domains\yii-blog.test\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 C:\OpenServer\domains\yii-blog.test\blog\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/blog/index.php/site/index
+HTTP_REFERER=http://yii-blog.test/blog/index.php/site/login
+---
+2016/01/26 17:26:01 [error] [exception.CException] exception 'CException' with message 'Псевдоним "zii.widgets.CPostList" неверен. Убедитесь, что он указывает на существующий PHP файл.' in C:\OpenServer\domains\yii-blog.test\framework\YiiBase.php:323
+Stack trace:
+#0 C:\OpenServer\domains\yii-blog.test\framework\web\CWidgetFactory.php(146): YiiBase::import('zii.widgets.CPo...', true)
+#1 C:\OpenServer\domains\yii-blog.test\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'zii.widgets.CPo...', Array)
+#2 C:\OpenServer\domains\yii-blog.test\framework\web\CBaseController.php(180): CBaseController->createWidget('zii.widgets.CPo...', Array)
+#3 C:\OpenServer\domains\yii-blog.test\blog\protected\views\site\index.php(13): CBaseController->widget('zii.widgets.CPo...', Array)
+#4 C:\OpenServer\domains\yii-blog.test\framework\web\CBaseController.php(126): require('C:\OpenServer\d...')
+#5 C:\OpenServer\domains\yii-blog.test\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\OpenServer\d...', NULL, true)
+#6 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(869): CBaseController->renderFile('C:\OpenServer\d...', NULL, true)
+#7 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#8 C:\OpenServer\domains\yii-blog.test\blog\protected\controllers\SiteController.php(32): CController->render('index')
+#9 C:\OpenServer\domains\yii-blog.test\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#10 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\OpenServer\domains\yii-blog.test\framework\web\CWebApplication.php(282): CController->run('index')
+#14 C:\OpenServer\domains\yii-blog.test\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#15 C:\OpenServer\domains\yii-blog.test\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 C:\OpenServer\domains\yii-blog.test\blog\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/blog/index.php/site/index
+HTTP_REFERER=http://yii-blog.test/blog/index.php/site/login
+---
+2016/01/26 17:26:50 [error] [exception.CException] exception 'CException' with message 'Неправильный алиас "blog.widgets.CPostList". Убедитесь, что он указывает на существующую директорию или файл.' in C:\OpenServer\domains\yii-blog.test\framework\YiiBase.php:348
+Stack trace:
+#0 C:\OpenServer\domains\yii-blog.test\framework\web\CWidgetFactory.php(146): YiiBase::import('blog.widgets.CP...', true)
+#1 C:\OpenServer\domains\yii-blog.test\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'blog.widgets.CP...', Array)
+#2 C:\OpenServer\domains\yii-blog.test\framework\web\CBaseController.php(180): CBaseController->createWidget('blog.widgets.CP...', Array)
+#3 C:\OpenServer\domains\yii-blog.test\blog\protected\views\site\index.php(13): CBaseController->widget('blog.widgets.CP...', Array)
+#4 C:\OpenServer\domains\yii-blog.test\framework\web\CBaseController.php(126): require('C:\OpenServer\d...')
+#5 C:\OpenServer\domains\yii-blog.test\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\OpenServer\d...', NULL, true)
+#6 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(869): CBaseController->renderFile('C:\OpenServer\d...', NULL, true)
+#7 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#8 C:\OpenServer\domains\yii-blog.test\blog\protected\controllers\SiteController.php(32): CController->render('index')
+#9 C:\OpenServer\domains\yii-blog.test\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#10 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\OpenServer\domains\yii-blog.test\framework\web\CWebApplication.php(282): CController->run('index')
+#14 C:\OpenServer\domains\yii-blog.test\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#15 C:\OpenServer\domains\yii-blog.test\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 C:\OpenServer\domains\yii-blog.test\blog\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/blog/index.php/site/index
+HTTP_REFERER=http://yii-blog.test/blog/index.php/site/login
+---
+2016/01/26 17:27:48 [error] [exception.CException] exception 'CException' with message 'Неправильный алиас "widgets.CPostList". Убедитесь, что он указывает на существующую директорию или файл.' in C:\OpenServer\domains\yii-blog.test\framework\YiiBase.php:348
+Stack trace:
+#0 C:\OpenServer\domains\yii-blog.test\framework\web\CWidgetFactory.php(146): YiiBase::import('widgets.CPostLi...', true)
+#1 C:\OpenServer\domains\yii-blog.test\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'widgets.CPostLi...', Array)
+#2 C:\OpenServer\domains\yii-blog.test\framework\web\CBaseController.php(180): CBaseController->createWidget('widgets.CPostLi...', Array)
+#3 C:\OpenServer\domains\yii-blog.test\blog\protected\views\site\index.php(13): CBaseController->widget('widgets.CPostLi...', Array)
+#4 C:\OpenServer\domains\yii-blog.test\framework\web\CBaseController.php(126): require('C:\OpenServer\d...')
+#5 C:\OpenServer\domains\yii-blog.test\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\OpenServer\d...', NULL, true)
+#6 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(869): CBaseController->renderFile('C:\OpenServer\d...', NULL, true)
+#7 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#8 C:\OpenServer\domains\yii-blog.test\blog\protected\controllers\SiteController.php(32): CController->render('index')
+#9 C:\OpenServer\domains\yii-blog.test\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#10 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\OpenServer\domains\yii-blog.test\framework\web\CWebApplication.php(282): CController->run('index')
+#14 C:\OpenServer\domains\yii-blog.test\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#15 C:\OpenServer\domains\yii-blog.test\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 C:\OpenServer\domains\yii-blog.test\blog\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/blog/index.php/site/index
+HTTP_REFERER=http://yii-blog.test/blog/index.php/site/login
+---
+2016/01/26 17:29:38 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "CPostList.htmlOptions".' in C:\OpenServer\domains\yii-blog.test\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\OpenServer\domains\yii-blog.test\framework\web\CWidgetFactory.php(161): CComponent->__set('htmlOptions', Array)
+#1 C:\OpenServer\domains\yii-blog.test\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'ext.widgets.CPo...', Array)
+#2 C:\OpenServer\domains\yii-blog.test\framework\web\CBaseController.php(180): CBaseController->createWidget('ext.widgets.CPo...', Array)
+#3 C:\OpenServer\domains\yii-blog.test\blog\protected\views\site\index.php(13): CBaseController->widget('ext.widgets.CPo...', Array)
+#4 C:\OpenServer\domains\yii-blog.test\framework\web\CBaseController.php(126): require('C:\OpenServer\d...')
+#5 C:\OpenServer\domains\yii-blog.test\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\OpenServer\d...', NULL, true)
+#6 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(869): CBaseController->renderFile('C:\OpenServer\d...', NULL, true)
+#7 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#8 C:\OpenServer\domains\yii-blog.test\blog\protected\controllers\SiteController.php(32): CController->render('index')
+#9 C:\OpenServer\domains\yii-blog.test\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#10 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\OpenServer\domains\yii-blog.test\framework\web\CWebApplication.php(282): CController->run('index')
+#14 C:\OpenServer\domains\yii-blog.test\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#15 C:\OpenServer\domains\yii-blog.test\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 C:\OpenServer\domains\yii-blog.test\blog\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/blog/index.php/site/index
+HTTP_REFERER=http://yii-blog.test/blog/index.php/site/login
+---
+2016/01/26 18:01:44 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "CWebUser.isAdmin".' in C:\OpenServer\domains\yii-blog.test\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\OpenServer\domains\yii-blog.test\framework\web\auth\CWebUser.php(146): CComponent->__get('isAdmin')
+#1 C:\OpenServer\domains\yii-blog.test\blog\protected\views\layouts\main.php(86): CWebUser->__get('isAdmin')
+#2 C:\OpenServer\domains\yii-blog.test\framework\web\CBaseController.php(126): require('C:\OpenServer\d...')
+#3 C:\OpenServer\domains\yii-blog.test\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\OpenServer\d...', Array, true)
+#4 C:\OpenServer\domains\yii-blog.test\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\OpenServer\d...', Array, true)
+#5 C:\OpenServer\domains\yii-blog.test\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#6 C:\OpenServer\domains\yii-blog.test\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#7 C:\OpenServer\domains\yii-blog.test\framework\web\CBaseController.php(214): COutputProcessor->run()
+#8 C:\OpenServer\domains\yii-blog.test\framework\web\CBaseController.php(308): CBaseController->endWidget('CContentDecorat...')
+#9 C:\OpenServer\domains\yii-blog.test\blog\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#10 C:\OpenServer\domains\yii-blog.test\framework\web\CBaseController.php(126): require('C:\OpenServer\d...')
+#11 C:\OpenServer\domains\yii-blog.test\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\OpenServer\d...', Array, true)
+#12 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(784): CBaseController->renderFile('C:\OpenServer\d...', Array, true)
+#13 C:\OpenServer\domains\yii-blog.test\blog\protected\controllers\SiteController.php(32): CController->render('index')
+#14 C:\OpenServer\domains\yii-blog.test\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#15 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#17 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\OpenServer\domains\yii-blog.test\framework\web\CWebApplication.php(282): CController->run('index')
+#19 C:\OpenServer\domains\yii-blog.test\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#20 C:\OpenServer\domains\yii-blog.test\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#21 C:\OpenServer\domains\yii-blog.test\blog\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/blog/index.php/site/index
+HTTP_REFERER=http://yii-blog.test/blog/index.php/user/admin
+---
+2016/01/26 18:03:03 [error] [exception.CException] exception 'CException' with message 'В классе CWebUser и его поведениях не найден метод или замыкание с именем "isAdmin".' in C:\OpenServer\domains\yii-blog.test\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\OpenServer\domains\yii-blog.test\blog\protected\views\layouts\main.php(86): CComponent->__call('isAdmin', Array)
+#1 C:\OpenServer\domains\yii-blog.test\blog\protected\views\layouts\main.php(86): CWebUser->isAdmin()
+#2 C:\OpenServer\domains\yii-blog.test\framework\web\CBaseController.php(126): require('C:\OpenServer\d...')
+#3 C:\OpenServer\domains\yii-blog.test\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\OpenServer\d...', Array, true)
+#4 C:\OpenServer\domains\yii-blog.test\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\OpenServer\d...', Array, true)
+#5 C:\OpenServer\domains\yii-blog.test\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#6 C:\OpenServer\domains\yii-blog.test\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#7 C:\OpenServer\domains\yii-blog.test\framework\web\CBaseController.php(214): COutputProcessor->run()
+#8 C:\OpenServer\domains\yii-blog.test\framework\web\CBaseController.php(308): CBaseController->endWidget('CContentDecorat...')
+#9 C:\OpenServer\domains\yii-blog.test\blog\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#10 C:\OpenServer\domains\yii-blog.test\framework\web\CBaseController.php(126): require('C:\OpenServer\d...')
+#11 C:\OpenServer\domains\yii-blog.test\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\OpenServer\d...', Array, true)
+#12 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(784): CBaseController->renderFile('C:\OpenServer\d...', Array, true)
+#13 C:\OpenServer\domains\yii-blog.test\blog\protected\controllers\SiteController.php(32): CController->render('index')
+#14 C:\OpenServer\domains\yii-blog.test\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#15 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#17 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\OpenServer\domains\yii-blog.test\framework\web\CWebApplication.php(282): CController->run('index')
+#19 C:\OpenServer\domains\yii-blog.test\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#20 C:\OpenServer\domains\yii-blog.test\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#21 C:\OpenServer\domains\yii-blog.test\blog\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/blog/index.php/site/index
+HTTP_REFERER=http://yii-blog.test/blog/index.php/user/admin
+---
+2016/01/26 18:06:38 [error] [exception.CException] exception 'CException' with message 'В классе CWebUser и его поведениях не найден метод или замыкание с именем "isAdmin".' in C:\OpenServer\domains\yii-blog.test\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\OpenServer\domains\yii-blog.test\blog\protected\views\layouts\main.php(86): CComponent->__call('isAdmin', Array)
+#1 C:\OpenServer\domains\yii-blog.test\blog\protected\views\layouts\main.php(86): CWebUser->isAdmin()
+#2 C:\OpenServer\domains\yii-blog.test\framework\web\CBaseController.php(126): require('C:\OpenServer\d...')
+#3 C:\OpenServer\domains\yii-blog.test\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\OpenServer\d...', Array, true)
+#4 C:\OpenServer\domains\yii-blog.test\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\OpenServer\d...', Array, true)
+#5 C:\OpenServer\domains\yii-blog.test\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#6 C:\OpenServer\domains\yii-blog.test\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#7 C:\OpenServer\domains\yii-blog.test\framework\web\CBaseController.php(214): COutputProcessor->run()
+#8 C:\OpenServer\domains\yii-blog.test\framework\web\CBaseController.php(308): CBaseController->endWidget('CContentDecorat...')
+#9 C:\OpenServer\domains\yii-blog.test\blog\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#10 C:\OpenServer\domains\yii-blog.test\framework\web\CBaseController.php(126): require('C:\OpenServer\d...')
+#11 C:\OpenServer\domains\yii-blog.test\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\OpenServer\d...', Array, true)
+#12 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(784): CBaseController->renderFile('C:\OpenServer\d...', Array, true)
+#13 C:\OpenServer\domains\yii-blog.test\blog\protected\controllers\SiteController.php(32): CController->render('index')
+#14 C:\OpenServer\domains\yii-blog.test\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#15 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#17 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\OpenServer\domains\yii-blog.test\framework\web\CWebApplication.php(282): CController->run('index')
+#19 C:\OpenServer\domains\yii-blog.test\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#20 C:\OpenServer\domains\yii-blog.test\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#21 C:\OpenServer\domains\yii-blog.test\blog\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/blog/index.php/site/index
+HTTP_REFERER=http://yii-blog.test/blog/index.php/user/admin
+---
+2016/01/26 18:19:09 [error] [exception.CException] exception 'CException' with message 'В классе User и его поведениях не найден метод или замыкание с именем "validatePassword".' in C:\OpenServer\domains\yii-blog.test\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\OpenServer\domains\yii-blog.test\framework\db\ar\CActiveRecord.php(227): CComponent->__call('validatePasswor...', Array)
+#1 C:\OpenServer\domains\yii-blog.test\blog\protected\components\UserIdentity.php(18): CActiveRecord->__call('validatePasswor...', Array)
+#2 C:\OpenServer\domains\yii-blog.test\blog\protected\components\UserIdentity.php(18): User->validatePassword('1234')
+#3 C:\OpenServer\domains\yii-blog.test\blog\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#4 C:\OpenServer\domains\yii-blog.test\framework\validators\CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#5 C:\OpenServer\domains\yii-blog.test\framework\validators\CValidator.php(201): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#6 C:\OpenServer\domains\yii-blog.test\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#7 C:\OpenServer\domains\yii-blog.test\blog\protected\controllers\SiteController.php(94): CModel->validate()
+#8 C:\OpenServer\domains\yii-blog.test\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#9 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\OpenServer\domains\yii-blog.test\framework\web\CWebApplication.php(282): CController->run('login')
+#13 C:\OpenServer\domains\yii-blog.test\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#14 C:\OpenServer\domains\yii-blog.test\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\OpenServer\domains\yii-blog.test\blog\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/blog/index.php/site/login
+HTTP_REFERER=http://yii-blog.test/blog/index.php/site/login
+---
+2016/01/26 19:05:45 [error] [php] include(phone.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (C:\OpenServer\domains\yii-blog.test\framework\YiiBase.php:432)
+Stack trace:
+#0 unknown(0): spl_autoload_call()
+#1 C:\OpenServer\domains\yii-blog.test\framework\YiiBase.php(303): class_exists()
+#2 C:\OpenServer\domains\yii-blog.test\framework\validators\CValidator.php(174): import()
+#3 C:\OpenServer\domains\yii-blog.test\framework\base\CModel.php(287): createValidator()
+#4 C:\OpenServer\domains\yii-blog.test\framework\base\CModel.php(260): ContactForm->createValidators()
+#5 C:\OpenServer\domains\yii-blog.test\framework\base\CModel.php(547): ContactForm->getValidators()
+#6 C:\OpenServer\domains\yii-blog.test\framework\web\widgets\CActiveForm.php(567): ContactForm->getSafeAttributeNames()
+#7 C:\OpenServer\domains\yii-blog.test\blog\protected\views\site\contact.php(43): CActiveForm->errorSummary()
+#8 C:\OpenServer\domains\yii-blog.test\framework\web\CBaseController.php(126): require()
+#9 C:\OpenServer\domains\yii-blog.test\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#10 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(869): SiteController->renderFile()
+#11 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(782): SiteController->renderPartial()
+#12 C:\OpenServer\domains\yii-blog.test\blog\protected\controllers\SiteController.php(72): SiteController->render()
+#13 C:\OpenServer\domains\yii-blog.test\framework\web\actions\CInlineAction.php(49): SiteController->actionContact()
+#14 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(308): CInlineAction->runWithParams()
+#15 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(286): SiteController->runAction()
+#16 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#17 C:\OpenServer\domains\yii-blog.test\framework\web\CWebApplication.php(282): SiteController->run()
+#18 C:\OpenServer\domains\yii-blog.test\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#19 C:\OpenServer\domains\yii-blog.test\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#20 C:\OpenServer\domains\yii-blog.test\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/index.php/site/contact
+in C:\OpenServer\domains\yii-blog.test\blog\protected\views\site\contact.php (43)
+in C:\OpenServer\domains\yii-blog.test\blog\protected\controllers\SiteController.php (72)
+in C:\OpenServer\domains\yii-blog.test\blog\index.php (13)
+2016/01/26 19:24:56 [error] [php] array_merge() [<a href='function.array-merge'>function.array-merge</a>]: Argument #2 is not an array (C:\OpenServer\domains\yii-blog.test\blog\protected\extensions\widgets\CPostList.php:21)
+Stack trace:
+#0 C:\OpenServer\domains\yii-blog.test\blog\protected\views\site\index.php(11): SiteController->widget()
+#1 C:\OpenServer\domains\yii-blog.test\framework\web\CBaseController.php(126): require()
+#2 C:\OpenServer\domains\yii-blog.test\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#3 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(869): SiteController->renderFile()
+#4 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(782): SiteController->renderPartial()
+#5 C:\OpenServer\domains\yii-blog.test\blog\protected\controllers\SiteController.php(32): SiteController->render()
+#6 C:\OpenServer\domains\yii-blog.test\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#7 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(286): SiteController->runAction()
+#9 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#10 C:\OpenServer\domains\yii-blog.test\framework\web\CWebApplication.php(282): SiteController->run()
+#11 C:\OpenServer\domains\yii-blog.test\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 C:\OpenServer\domains\yii-blog.test\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 C:\OpenServer\domains\yii-blog.test\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/
+in C:\OpenServer\domains\yii-blog.test\blog\protected\extensions\widgets\CPostList.php (21)
+in C:\OpenServer\domains\yii-blog.test\blog\protected\views\site\index.php (11)
+in C:\OpenServer\domains\yii-blog.test\blog\protected\controllers\SiteController.php (32)
+2016/01/26 19:40:46 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'У вас недостаточно прав для выполнения указанного действия.' in C:\OpenServer\domains\yii-blog.test\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\OpenServer\domains\yii-blog.test\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), '?? ?????? ?????...')
+#1 C:\OpenServer\domains\yii-blog.test\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\OpenServer\domains\yii-blog.test\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\OpenServer\domains\yii-blog.test\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\OpenServer\domains\yii-blog.test\framework\web\CWebApplication.php(282): CController->run('create')
+#8 C:\OpenServer\domains\yii-blog.test\framework\web\CWebApplication.php(141): CWebApplication->runController('user/create')
+#9 C:\OpenServer\domains\yii-blog.test\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\OpenServer\domains\yii-blog.test\blog\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/blog/index.php/user/create
+HTTP_REFERER=http://yii-blog.test/blog/index.php/user/22
+---
+2016/01/26 19:40:56 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'У вас недостаточно прав для выполнения указанного действия.' in C:\OpenServer\domains\yii-blog.test\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\OpenServer\domains\yii-blog.test\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), '?? ?????? ?????...')
+#1 C:\OpenServer\domains\yii-blog.test\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\OpenServer\domains\yii-blog.test\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\OpenServer\domains\yii-blog.test\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\OpenServer\domains\yii-blog.test\framework\web\CWebApplication.php(282): CController->run('index')
+#8 C:\OpenServer\domains\yii-blog.test\framework\web\CWebApplication.php(141): CWebApplication->runController('user/index')
+#9 C:\OpenServer\domains\yii-blog.test\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\OpenServer\domains\yii-blog.test\blog\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/blog/index.php/user/index
+HTTP_REFERER=http://yii-blog.test/blog/index.php/user/22
+---
+2016/01/26 19:41:08 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'У вас недостаточно прав для выполнения указанного действия.' in C:\OpenServer\domains\yii-blog.test\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\OpenServer\domains\yii-blog.test\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), '?? ?????? ?????...')
+#1 C:\OpenServer\domains\yii-blog.test\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\OpenServer\domains\yii-blog.test\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\OpenServer\domains\yii-blog.test\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\OpenServer\domains\yii-blog.test\framework\web\CWebApplication.php(282): CController->run('delete')
+#8 C:\OpenServer\domains\yii-blog.test\framework\web\CWebApplication.php(141): CWebApplication->runController('user/delete')
+#9 C:\OpenServer\domains\yii-blog.test\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\OpenServer\domains\yii-blog.test\blog\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/blog/index.php/user/delete/22
+HTTP_REFERER=http://yii-blog.test/blog/index.php/user/22
+---
+2016/01/26 19:41:12 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'У вас недостаточно прав для выполнения указанного действия.' in C:\OpenServer\domains\yii-blog.test\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\OpenServer\domains\yii-blog.test\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), '?? ?????? ?????...')
+#1 C:\OpenServer\domains\yii-blog.test\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\OpenServer\domains\yii-blog.test\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\OpenServer\domains\yii-blog.test\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\OpenServer\domains\yii-blog.test\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\OpenServer\domains\yii-blog.test\framework\web\CWebApplication.php(141): CWebApplication->runController('user/admin')
+#9 C:\OpenServer\domains\yii-blog.test\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\OpenServer\domains\yii-blog.test\blog\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/blog/index.php/user/admin
+HTTP_REFERER=http://yii-blog.test/blog/index.php/user/22
+---
+2016/01/26 19:44:42 [warning] [application] Не удалось присвоить небезопасный атрибут "role" класса "User".
+in C:\OpenServer\domains\yii-blog.test\blog\protected\controllers\UserController.php (96)
+in C:\OpenServer\domains\yii-blog.test\blog\index.php (13)
+2016/01/26 19:52:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "register".' in C:\OpenServer\domains\yii-blog.test\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(270): CController->missingAction('register')
+#1 C:\OpenServer\domains\yii-blog.test\framework\web\CWebApplication.php(282): CController->run('register')
+#2 C:\OpenServer\domains\yii-blog.test\framework\web\CWebApplication.php(141): CWebApplication->runController('site/register')
+#3 C:\OpenServer\domains\yii-blog.test\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\yii-blog.test\blog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/blog/index.php/site/register
+HTTP_REFERER=http://yii-blog.test/blog/index.php
+---
+2016/01/26 20:35:21 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::execute(): SQLSTATE[23000]: Integrity constraint violation: 19 tbl_user.password may not be NULL. Выполнявшийся SQL-запрос: INSERT INTO 'tbl_user' ("username", "email", "role") VALUES (:username, :email, :role).
+in C:\OpenServer\domains\yii-blog.test\blog\protected\models\RegForm.php (77)
+in C:\OpenServer\domains\yii-blog.test\blog\protected\controllers\SiteController.php (126)
+in C:\OpenServer\domains\yii-blog.test\blog\index.php (13)
+2016/01/26 20:35:21 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[23000]: Integrity constraint violation: 19 tbl_user.password may not be NULL. The SQL statement executed was: INSERT INTO 'tbl_user' ("username", "email", "role") VALUES (:username, :email, :role)' in C:\OpenServer\domains\yii-blog.test\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\OpenServer\domains\yii-blog.test\framework\db\CDbCommand.php(1278): CDbCommand->execute(Array)
+#1 C:\OpenServer\domains\yii-blog.test\blog\protected\models\RegForm.php(77): CDbCommand->insert('tbl_user', Array)
+#2 C:\OpenServer\domains\yii-blog.test\blog\protected\controllers\SiteController.php(126): RegForm->reg()
+#3 C:\OpenServer\domains\yii-blog.test\framework\web\actions\CInlineAction.php(49): SiteController->actionReg()
+#4 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\OpenServer\domains\yii-blog.test\framework\web\CWebApplication.php(282): CController->run('reg')
+#8 C:\OpenServer\domains\yii-blog.test\framework\web\CWebApplication.php(141): CWebApplication->runController('site/reg')
+#9 C:\OpenServer\domains\yii-blog.test\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\OpenServer\domains\yii-blog.test\blog\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/blog/index.php/site/reg
+HTTP_REFERER=http://yii-blog.test/blog/index.php/site/reg
+---
+2016/01/26 20:55:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "blogrecord/index".' in C:\OpenServer\domains\yii-blog.test\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\yii-blog.test\framework\web\CWebApplication.php(141): CWebApplication->runController('blogrecord/inde...')
+#1 C:\OpenServer\domains\yii-blog.test\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\yii-blog.test\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/index.php/blogrecord/index
+---
+2016/01/26 20:55:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "blogrecord/index".' in C:\OpenServer\domains\yii-blog.test\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\yii-blog.test\framework\web\CWebApplication.php(141): CWebApplication->runController('blogrecord/inde...')
+#1 C:\OpenServer\domains\yii-blog.test\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\yii-blog.test\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/index.php/blogrecord/index
+---
+2016/01/26 21:05:58 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'У вас недостаточно прав для выполнения указанного действия.' in C:\OpenServer\domains\yii-blog.test\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\OpenServer\domains\yii-blog.test\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), '?? ?????? ?????...')
+#1 C:\OpenServer\domains\yii-blog.test\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\OpenServer\domains\yii-blog.test\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\OpenServer\domains\yii-blog.test\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\OpenServer\domains\yii-blog.test\framework\web\CWebApplication.php(282): CController->run('')
+#8 C:\OpenServer\domains\yii-blog.test\framework\web\CWebApplication.php(141): CWebApplication->runController('user')
+#9 C:\OpenServer\domains\yii-blog.test\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\OpenServer\domains\yii-blog.test\blog\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/blog/user
+---
+2016/01/26 21:11:06 [error] [system.db.CDbCommand] Error in preparing SQL: SELECT "username"
+FROM 'tbl_user'
+WHERE date<>none and id=1
+in C:\OpenServer\domains\yii-blog.test\blog\protected\extensions\widgets\CPostList.php (22)
+in C:\OpenServer\domains\yii-blog.test\blog\protected\modules\blogrecord\views\default\index.php (11)
+in C:\OpenServer\domains\yii-blog.test\blog\protected\modules\blogrecord\controllers\DefaultController.php (31)
+2016/01/26 21:11:06 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetch(): CDbCommand не удалось подготовить SQL-запрос: SQLSTATE[HY000]: General error: 1 no such column: date. Выполнявшийся SQL-запрос: SELECT "username"
+FROM 'tbl_user'
+WHERE date<>none and id=1.
+in C:\OpenServer\domains\yii-blog.test\blog\protected\extensions\widgets\CPostList.php (22)
+in C:\OpenServer\domains\yii-blog.test\blog\protected\modules\blogrecord\views\default\index.php (11)
+in C:\OpenServer\domains\yii-blog.test\blog\protected\modules\blogrecord\controllers\DefaultController.php (31)
+2016/01/26 21:11:06 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: CDbCommand не удалось подготовить SQL-запрос: SQLSTATE[HY000]: General error: 1 no such column: date. The SQL statement executed was: SELECT "username"
+FROM 'tbl_user'
+WHERE date<>none and id=1' in C:\OpenServer\domains\yii-blog.test\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\OpenServer\domains\yii-blog.test\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 C:\OpenServer\domains\yii-blog.test\blog\protected\extensions\widgets\CPostList.php(22): CDbCommand->queryRow()
+#2 C:\OpenServer\domains\yii-blog.test\framework\web\CBaseController.php(181): CPostList->run()
+#3 C:\OpenServer\domains\yii-blog.test\blog\protected\modules\blogrecord\views\default\index.php(11): CBaseController->widget('ext.widgets.CPo...', Array)
+#4 C:\OpenServer\domains\yii-blog.test\framework\web\CBaseController.php(126): require('C:\OpenServer\d...')
+#5 C:\OpenServer\domains\yii-blog.test\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\OpenServer\d...', Array, true)
+#6 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(869): CBaseController->renderFile('C:\OpenServer\d...', Array, true)
+#7 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#8 C:\OpenServer\domains\yii-blog.test\blog\protected\modules\blogrecord\controllers\DefaultController.php(31): CController->render('index', Array)
+#9 C:\OpenServer\domains\yii-blog.test\framework\web\actions\CInlineAction.php(49): DefaultController->actionIndex()
+#10 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\OpenServer\domains\yii-blog.test\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 C:\OpenServer\domains\yii-blog.test\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 C:\OpenServer\domains\yii-blog.test\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\OpenServer\domains\yii-blog.test\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\OpenServer\domains\yii-blog.test\framework\web\CWebApplication.php(282): CController->run('index')
+#19 C:\OpenServer\domains\yii-blog.test\framework\web\CWebApplication.php(141): CWebApplication->runController('blogrecord/defa...')
+#20 C:\OpenServer\domains\yii-blog.test\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#21 C:\OpenServer\domains\yii-blog.test\blog\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/blog/index.php/blogrecord/default/index
+---
+2016/01/26 21:11:32 [error] [system.db.CDbCommand] Error in preparing SQL: SELECT "username"
+FROM 'tbl_user'
+WHERE `date`<>none and id=1
+in C:\OpenServer\domains\yii-blog.test\blog\protected\extensions\widgets\CPostList.php (22)
+in C:\OpenServer\domains\yii-blog.test\blog\protected\modules\blogrecord\views\default\index.php (11)
+in C:\OpenServer\domains\yii-blog.test\blog\protected\modules\blogrecord\controllers\DefaultController.php (31)
+2016/01/26 21:11:32 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetch(): CDbCommand не удалось подготовить SQL-запрос: SQLSTATE[HY000]: General error: 1 no such column: date. Выполнявшийся SQL-запрос: SELECT "username"
+FROM 'tbl_user'
+WHERE `date`<>none and id=1.
+in C:\OpenServer\domains\yii-blog.test\blog\protected\extensions\widgets\CPostList.php (22)
+in C:\OpenServer\domains\yii-blog.test\blog\protected\modules\blogrecord\views\default\index.php (11)
+in C:\OpenServer\domains\yii-blog.test\blog\protected\modules\blogrecord\controllers\DefaultController.php (31)
+2016/01/26 21:11:32 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: CDbCommand не удалось подготовить SQL-запрос: SQLSTATE[HY000]: General error: 1 no such column: date. The SQL statement executed was: SELECT "username"
+FROM 'tbl_user'
+WHERE `date`<>none and id=1' in C:\OpenServer\domains\yii-blog.test\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\OpenServer\domains\yii-blog.test\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 C:\OpenServer\domains\yii-blog.test\blog\protected\extensions\widgets\CPostList.php(22): CDbCommand->queryRow()
+#2 C:\OpenServer\domains\yii-blog.test\framework\web\CBaseController.php(181): CPostList->run()
+#3 C:\OpenServer\domains\yii-blog.test\blog\protected\modules\blogrecord\views\default\index.php(11): CBaseController->widget('ext.widgets.CPo...', Array)
+#4 C:\OpenServer\domains\yii-blog.test\framework\web\CBaseController.php(126): require('C:\OpenServer\d...')
+#5 C:\OpenServer\domains\yii-blog.test\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\OpenServer\d...', Array, true)
+#6 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(869): CBaseController->renderFile('C:\OpenServer\d...', Array, true)
+#7 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#8 C:\OpenServer\domains\yii-blog.test\blog\protected\modules\blogrecord\controllers\DefaultController.php(31): CController->render('index', Array)
+#9 C:\OpenServer\domains\yii-blog.test\framework\web\actions\CInlineAction.php(49): DefaultController->actionIndex()
+#10 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\OpenServer\domains\yii-blog.test\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 C:\OpenServer\domains\yii-blog.test\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 C:\OpenServer\domains\yii-blog.test\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\OpenServer\domains\yii-blog.test\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\OpenServer\domains\yii-blog.test\framework\web\CWebApplication.php(282): CController->run('index')
+#19 C:\OpenServer\domains\yii-blog.test\framework\web\CWebApplication.php(141): CWebApplication->runController('blogrecord/defa...')
+#20 C:\OpenServer\domains\yii-blog.test\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#21 C:\OpenServer\domains\yii-blog.test\blog\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/blog/index.php/blogrecord/default/index
+---
+2016/01/26 21:11:46 [error] [system.db.CDbCommand] Error in preparing SQL: SELECT "username"
+FROM 'tbl_user'
+WHERE `date`!="none" and id=1
+in C:\OpenServer\domains\yii-blog.test\blog\protected\extensions\widgets\CPostList.php (22)
+in C:\OpenServer\domains\yii-blog.test\blog\protected\modules\blogrecord\views\default\index.php (11)
+in C:\OpenServer\domains\yii-blog.test\blog\protected\modules\blogrecord\controllers\DefaultController.php (31)
+2016/01/26 21:11:46 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetch(): CDbCommand не удалось подготовить SQL-запрос: SQLSTATE[HY000]: General error: 1 no such column: date. Выполнявшийся SQL-запрос: SELECT "username"
+FROM 'tbl_user'
+WHERE `date`!="none" and id=1.
+in C:\OpenServer\domains\yii-blog.test\blog\protected\extensions\widgets\CPostList.php (22)
+in C:\OpenServer\domains\yii-blog.test\blog\protected\modules\blogrecord\views\default\index.php (11)
+in C:\OpenServer\domains\yii-blog.test\blog\protected\modules\blogrecord\controllers\DefaultController.php (31)
+2016/01/26 21:11:46 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: CDbCommand не удалось подготовить SQL-запрос: SQLSTATE[HY000]: General error: 1 no such column: date. The SQL statement executed was: SELECT "username"
+FROM 'tbl_user'
+WHERE `date`!="none" and id=1' in C:\OpenServer\domains\yii-blog.test\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\OpenServer\domains\yii-blog.test\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 C:\OpenServer\domains\yii-blog.test\blog\protected\extensions\widgets\CPostList.php(22): CDbCommand->queryRow()
+#2 C:\OpenServer\domains\yii-blog.test\framework\web\CBaseController.php(181): CPostList->run()
+#3 C:\OpenServer\domains\yii-blog.test\blog\protected\modules\blogrecord\views\default\index.php(11): CBaseController->widget('ext.widgets.CPo...', Array)
+#4 C:\OpenServer\domains\yii-blog.test\framework\web\CBaseController.php(126): require('C:\OpenServer\d...')
+#5 C:\OpenServer\domains\yii-blog.test\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\OpenServer\d...', Array, true)
+#6 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(869): CBaseController->renderFile('C:\OpenServer\d...', Array, true)
+#7 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#8 C:\OpenServer\domains\yii-blog.test\blog\protected\modules\blogrecord\controllers\DefaultController.php(31): CController->render('index', Array)
+#9 C:\OpenServer\domains\yii-blog.test\framework\web\actions\CInlineAction.php(49): DefaultController->actionIndex()
+#10 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\OpenServer\domains\yii-blog.test\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 C:\OpenServer\domains\yii-blog.test\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 C:\OpenServer\domains\yii-blog.test\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\OpenServer\domains\yii-blog.test\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\OpenServer\domains\yii-blog.test\framework\web\CWebApplication.php(282): CController->run('index')
+#19 C:\OpenServer\domains\yii-blog.test\framework\web\CWebApplication.php(141): CWebApplication->runController('blogrecord/defa...')
+#20 C:\OpenServer\domains\yii-blog.test\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#21 C:\OpenServer\domains\yii-blog.test\blog\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/blog/index.php/blogrecord/default/index
+---
+2016/01/26 21:13:22 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchAll(): SQLSTATE[HY000]: General error: 25 bind or column index out of range. Выполнявшийся SQL-запрос: SELECT *
+FROM 'tbl_blogrecord'
+WHERE date!=:date.
+in C:\OpenServer\domains\yii-blog.test\blog\protected\extensions\widgets\CPostList.php (21)
+in C:\OpenServer\domains\yii-blog.test\blog\protected\modules\blogrecord\views\default\index.php (11)
+in C:\OpenServer\domains\yii-blog.test\blog\protected\modules\blogrecord\controllers\DefaultController.php (31)
+2016/01/26 21:13:22 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[HY000]: General error: 25 bind or column index out of range. The SQL statement executed was: SELECT *
+FROM 'tbl_blogrecord'
+WHERE date!=:date' in C:\OpenServer\domains\yii-blog.test\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\OpenServer\domains\yii-blog.test\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\OpenServer\domains\yii-blog.test\blog\protected\extensions\widgets\CPostList.php(21): CDbCommand->queryAll()
+#2 C:\OpenServer\domains\yii-blog.test\framework\web\CBaseController.php(181): CPostList->run()
+#3 C:\OpenServer\domains\yii-blog.test\blog\protected\modules\blogrecord\views\default\index.php(11): CBaseController->widget('ext.widgets.CPo...', Array)
+#4 C:\OpenServer\domains\yii-blog.test\framework\web\CBaseController.php(126): require('C:\OpenServer\d...')
+#5 C:\OpenServer\domains\yii-blog.test\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\OpenServer\d...', Array, true)
+#6 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(869): CBaseController->renderFile('C:\OpenServer\d...', Array, true)
+#7 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#8 C:\OpenServer\domains\yii-blog.test\blog\protected\modules\blogrecord\controllers\DefaultController.php(31): CController->render('index', Array)
+#9 C:\OpenServer\domains\yii-blog.test\framework\web\actions\CInlineAction.php(49): DefaultController->actionIndex()
+#10 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\OpenServer\domains\yii-blog.test\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 C:\OpenServer\domains\yii-blog.test\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 C:\OpenServer\domains\yii-blog.test\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\OpenServer\domains\yii-blog.test\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\OpenServer\domains\yii-blog.test\framework\web\CWebApplication.php(282): CController->run('index')
+#19 C:\OpenServer\domains\yii-blog.test\framework\web\CWebApplication.php(141): CWebApplication->runController('blogrecord/defa...')
+#20 C:\OpenServer\domains\yii-blog.test\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#21 C:\OpenServer\domains\yii-blog.test\blog\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/blog/index.php/blogrecord/default/index
+---
+2016/01/26 21:13:56 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchAll(): SQLSTATE[HY000]: General error: 25 bind or column index out of range. Выполнявшийся SQL-запрос: SELECT *
+FROM 'tbl_blogrecord'
+WHERE `date`!=:date.
+in C:\OpenServer\domains\yii-blog.test\blog\protected\extensions\widgets\CPostList.php (21)
+in C:\OpenServer\domains\yii-blog.test\blog\protected\modules\blogrecord\views\default\index.php (11)
+in C:\OpenServer\domains\yii-blog.test\blog\protected\modules\blogrecord\controllers\DefaultController.php (31)
+2016/01/26 21:13:56 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[HY000]: General error: 25 bind or column index out of range. The SQL statement executed was: SELECT *
+FROM 'tbl_blogrecord'
+WHERE `date`!=:date' in C:\OpenServer\domains\yii-blog.test\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\OpenServer\domains\yii-blog.test\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\OpenServer\domains\yii-blog.test\blog\protected\extensions\widgets\CPostList.php(21): CDbCommand->queryAll()
+#2 C:\OpenServer\domains\yii-blog.test\framework\web\CBaseController.php(181): CPostList->run()
+#3 C:\OpenServer\domains\yii-blog.test\blog\protected\modules\blogrecord\views\default\index.php(11): CBaseController->widget('ext.widgets.CPo...', Array)
+#4 C:\OpenServer\domains\yii-blog.test\framework\web\CBaseController.php(126): require('C:\OpenServer\d...')
+#5 C:\OpenServer\domains\yii-blog.test\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\OpenServer\d...', Array, true)
+#6 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(869): CBaseController->renderFile('C:\OpenServer\d...', Array, true)
+#7 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#8 C:\OpenServer\domains\yii-blog.test\blog\protected\modules\blogrecord\controllers\DefaultController.php(31): CController->render('index', Array)
+#9 C:\OpenServer\domains\yii-blog.test\framework\web\actions\CInlineAction.php(49): DefaultController->actionIndex()
+#10 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\OpenServer\domains\yii-blog.test\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 C:\OpenServer\domains\yii-blog.test\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 C:\OpenServer\domains\yii-blog.test\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\OpenServer\domains\yii-blog.test\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\OpenServer\domains\yii-blog.test\framework\web\CWebApplication.php(282): CController->run('index')
+#19 C:\OpenServer\domains\yii-blog.test\framework\web\CWebApplication.php(141): CWebApplication->runController('blogrecord/defa...')
+#20 C:\OpenServer\domains\yii-blog.test\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#21 C:\OpenServer\domains\yii-blog.test\blog\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/blog/index.php/blogrecord/default/index
+---
+2016/01/26 21:14:09 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchAll(): SQLSTATE[HY000]: General error: 25 bind or column index out of range. Выполнявшийся SQL-запрос: SELECT *
+FROM 'tbl_blogrecord'
+WHERE date!=:date.
+in C:\OpenServer\domains\yii-blog.test\blog\protected\extensions\widgets\CPostList.php (21)
+in C:\OpenServer\domains\yii-blog.test\blog\protected\modules\blogrecord\views\default\index.php (11)
+in C:\OpenServer\domains\yii-blog.test\blog\protected\modules\blogrecord\controllers\DefaultController.php (31)
+2016/01/26 21:14:09 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[HY000]: General error: 25 bind or column index out of range. The SQL statement executed was: SELECT *
+FROM 'tbl_blogrecord'
+WHERE date!=:date' in C:\OpenServer\domains\yii-blog.test\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\OpenServer\domains\yii-blog.test\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\OpenServer\domains\yii-blog.test\blog\protected\extensions\widgets\CPostList.php(21): CDbCommand->queryAll()
+#2 C:\OpenServer\domains\yii-blog.test\framework\web\CBaseController.php(181): CPostList->run()
+#3 C:\OpenServer\domains\yii-blog.test\blog\protected\modules\blogrecord\views\default\index.php(11): CBaseController->widget('ext.widgets.CPo...', Array)
+#4 C:\OpenServer\domains\yii-blog.test\framework\web\CBaseController.php(126): require('C:\OpenServer\d...')
+#5 C:\OpenServer\domains\yii-blog.test\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\OpenServer\d...', Array, true)
+#6 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(869): CBaseController->renderFile('C:\OpenServer\d...', Array, true)
+#7 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#8 C:\OpenServer\domains\yii-blog.test\blog\protected\modules\blogrecord\controllers\DefaultController.php(31): CController->render('index', Array)
+#9 C:\OpenServer\domains\yii-blog.test\framework\web\actions\CInlineAction.php(49): DefaultController->actionIndex()
+#10 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\OpenServer\domains\yii-blog.test\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 C:\OpenServer\domains\yii-blog.test\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 C:\OpenServer\domains\yii-blog.test\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\OpenServer\domains\yii-blog.test\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\OpenServer\domains\yii-blog.test\framework\web\CWebApplication.php(282): CController->run('index')
+#19 C:\OpenServer\domains\yii-blog.test\framework\web\CWebApplication.php(141): CWebApplication->runController('blogrecord/defa...')
+#20 C:\OpenServer\domains\yii-blog.test\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#21 C:\OpenServer\domains\yii-blog.test\blog\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/blog/index.php/blogrecord/default/index
+---
+2016/01/26 21:14:15 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchAll(): SQLSTATE[HY000]: General error: 25 bind or column index out of range. Выполнявшийся SQL-запрос: SELECT *
+FROM 'tbl_blogrecord'
+WHERE `date`!=:date.
+in C:\OpenServer\domains\yii-blog.test\blog\protected\extensions\widgets\CPostList.php (21)
+in C:\OpenServer\domains\yii-blog.test\blog\protected\modules\blogrecord\views\default\index.php (11)
+in C:\OpenServer\domains\yii-blog.test\blog\protected\modules\blogrecord\controllers\DefaultController.php (31)
+2016/01/26 21:14:15 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[HY000]: General error: 25 bind or column index out of range. The SQL statement executed was: SELECT *
+FROM 'tbl_blogrecord'
+WHERE `date`!=:date' in C:\OpenServer\domains\yii-blog.test\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\OpenServer\domains\yii-blog.test\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\OpenServer\domains\yii-blog.test\blog\protected\extensions\widgets\CPostList.php(21): CDbCommand->queryAll()
+#2 C:\OpenServer\domains\yii-blog.test\framework\web\CBaseController.php(181): CPostList->run()
+#3 C:\OpenServer\domains\yii-blog.test\blog\protected\modules\blogrecord\views\default\index.php(11): CBaseController->widget('ext.widgets.CPo...', Array)
+#4 C:\OpenServer\domains\yii-blog.test\framework\web\CBaseController.php(126): require('C:\OpenServer\d...')
+#5 C:\OpenServer\domains\yii-blog.test\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\OpenServer\d...', Array, true)
+#6 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(869): CBaseController->renderFile('C:\OpenServer\d...', Array, true)
+#7 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#8 C:\OpenServer\domains\yii-blog.test\blog\protected\modules\blogrecord\controllers\DefaultController.php(31): CController->render('index', Array)
+#9 C:\OpenServer\domains\yii-blog.test\framework\web\actions\CInlineAction.php(49): DefaultController->actionIndex()
+#10 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\OpenServer\domains\yii-blog.test\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 C:\OpenServer\domains\yii-blog.test\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 C:\OpenServer\domains\yii-blog.test\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\OpenServer\domains\yii-blog.test\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\OpenServer\domains\yii-blog.test\framework\web\CWebApplication.php(282): CController->run('index')
+#19 C:\OpenServer\domains\yii-blog.test\framework\web\CWebApplication.php(141): CWebApplication->runController('blogrecord/defa...')
+#20 C:\OpenServer\domains\yii-blog.test\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#21 C:\OpenServer\domains\yii-blog.test\blog\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/blog/index.php/blogrecord/default/index
+---
+2016/01/26 21:19:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "edit".' in C:\OpenServer\domains\yii-blog.test\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(270): CController->missingAction('edit')
+#1 C:\OpenServer\domains\yii-blog.test\framework\web\CWebApplication.php(282): CController->run('edit')
+#2 C:\OpenServer\domains\yii-blog.test\framework\web\CWebApplication.php(141): CWebApplication->runController('blogrecord/defa...')
+#3 C:\OpenServer\domains\yii-blog.test\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\yii-blog.test\blog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/blog/index.php/blogrecord/default/edit/1
+HTTP_REFERER=http://yii-blog.test/blog/index.php/blogrecord/default/index
+---
+2016/01/26 21:23:07 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "CPostList.editable".' in C:\OpenServer\domains\yii-blog.test\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\OpenServer\domains\yii-blog.test\framework\web\CWidgetFactory.php(161): CComponent->__set('editable', NULL)
+#1 C:\OpenServer\domains\yii-blog.test\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(DefaultController), 'ext.widgets.CPo...', Array)
+#2 C:\OpenServer\domains\yii-blog.test\framework\web\CBaseController.php(180): CBaseController->createWidget('ext.widgets.CPo...', Array)
+#3 C:\OpenServer\domains\yii-blog.test\blog\protected\modules\blogrecord\views\default\index.php(11): CBaseController->widget('ext.widgets.CPo...', Array)
+#4 C:\OpenServer\domains\yii-blog.test\framework\web\CBaseController.php(126): require('C:\OpenServer\d...')
+#5 C:\OpenServer\domains\yii-blog.test\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\OpenServer\d...', NULL, true)
+#6 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(869): CBaseController->renderFile('C:\OpenServer\d...', NULL, true)
+#7 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#8 C:\OpenServer\domains\yii-blog.test\blog\protected\modules\blogrecord\controllers\DefaultController.php(31): CController->render('index')
+#9 C:\OpenServer\domains\yii-blog.test\framework\web\actions\CInlineAction.php(49): DefaultController->actionIndex()
+#10 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\OpenServer\domains\yii-blog.test\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 C:\OpenServer\domains\yii-blog.test\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 C:\OpenServer\domains\yii-blog.test\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\OpenServer\domains\yii-blog.test\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\OpenServer\domains\yii-blog.test\framework\web\CWebApplication.php(282): CController->run('index')
+#19 C:\OpenServer\domains\yii-blog.test\framework\web\CWebApplication.php(141): CWebApplication->runController('blogrecord/defa...')
+#20 C:\OpenServer\domains\yii-blog.test\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#21 C:\OpenServer\domains\yii-blog.test\blog\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/blog/index.php/blogrecord/default/index
+---
+2016/01/26 21:24:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "view".' in C:\OpenServer\domains\yii-blog.test\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(270): CController->missingAction('view')
+#1 C:\OpenServer\domains\yii-blog.test\framework\web\CWebApplication.php(282): CController->run('view')
+#2 C:\OpenServer\domains\yii-blog.test\framework\web\CWebApplication.php(141): CWebApplication->runController('blogrecord/defa...')
+#3 C:\OpenServer\domains\yii-blog.test\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\yii-blog.test\blog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/blog/index.php/blogrecord/default/view/1
+HTTP_REFERER=http://yii-blog.test/blog/index.php/blogrecord/default/index
+---
+2016/01/26 22:03:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "blogrecord".' in C:\OpenServer\domains\yii-blog.test\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(270): CController->missingAction('blogrecord')
+#1 C:\OpenServer\domains\yii-blog.test\framework\web\CWebApplication.php(282): CController->run('blogrecord')
+#2 C:\OpenServer\domains\yii-blog.test\framework\web\CWebApplication.php(141): CWebApplication->runController('blogrecord/defa...')
+#3 C:\OpenServer\domains\yii-blog.test\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\yii-blog.test\blog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/blog/index.php/blogrecord/default/blogrecord/default
+HTTP_REFERER=http://yii-blog.test/blog/index.php/blogrecord/default/create
+---
+2016/01/26 22:10:09 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'У вас недостаточно прав для выполнения указанного действия.' in C:\OpenServer\domains\yii-blog.test\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\OpenServer\domains\yii-blog.test\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), '?? ?????? ?????...')
+#1 C:\OpenServer\domains\yii-blog.test\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\OpenServer\domains\yii-blog.test\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\OpenServer\domains\yii-blog.test\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\OpenServer\domains\yii-blog.test\framework\web\CWebApplication.php(282): CController->run('edit')
+#8 C:\OpenServer\domains\yii-blog.test\framework\web\CWebApplication.php(141): CWebApplication->runController('blogrecord/defa...')
+#9 C:\OpenServer\domains\yii-blog.test\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\OpenServer\domains\yii-blog.test\blog\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/blog/index.php/blogrecord/default/edit/3
+HTTP_REFERER=http://yii-blog.test/blog/index.php/blogrecord/default
+---
+2016/01/26 22:10:25 [error] [exception.CException] exception 'CException' with message 'Контроллер DefaultController не может найти представление "edit".' in C:\OpenServer\domains\yii-blog.test\framework\web\CController.php:878
+Stack trace:
+#0 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(782): CController->renderPartial('edit', Array, true)
+#1 C:\OpenServer\domains\yii-blog.test\blog\protected\modules\blogrecord\controllers\DefaultController.php(78): CController->render('edit', Array)
+#2 C:\OpenServer\domains\yii-blog.test\framework\web\actions\CInlineAction.php(49): DefaultController->actionEdit()
+#3 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\OpenServer\domains\yii-blog.test\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 C:\OpenServer\domains\yii-blog.test\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 C:\OpenServer\domains\yii-blog.test\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 C:\OpenServer\domains\yii-blog.test\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\OpenServer\domains\yii-blog.test\framework\web\CWebApplication.php(282): CController->run('edit')
+#12 C:\OpenServer\domains\yii-blog.test\framework\web\CWebApplication.php(141): CWebApplication->runController('blogrecord/defa...')
+#13 C:\OpenServer\domains\yii-blog.test\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 C:\OpenServer\domains\yii-blog.test\blog\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/blog/index.php/blogrecord/default/edit/3
+HTTP_REFERER=http://yii-blog.test/blog/index.php/blogrecord/default
+---
+2016/01/26 22:13:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "view".' in C:\OpenServer\domains\yii-blog.test\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(270): CController->missingAction('view')
+#1 C:\OpenServer\domains\yii-blog.test\framework\web\CWebApplication.php(282): CController->run('view')
+#2 C:\OpenServer\domains\yii-blog.test\framework\web\CWebApplication.php(141): CWebApplication->runController('blogrecord/defa...')
+#3 C:\OpenServer\domains\yii-blog.test\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\yii-blog.test\blog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/blog/index.php/blogrecord/default/view/3
+HTTP_REFERER=http://yii-blog.test/blog/index.php/blogrecord/default
+---
+2016/01/26 22:18:38 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "CActiveForm.title".' in C:\OpenServer\domains\yii-blog.test\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\OpenServer\domains\yii-blog.test\blog\protected\modules\blogrecord\views\default\edit.php(29): CComponent->__get('title')
+#1 C:\OpenServer\domains\yii-blog.test\framework\web\CBaseController.php(126): require('C:\OpenServer\d...')
+#2 C:\OpenServer\domains\yii-blog.test\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\OpenServer\d...', Array, true)
+#3 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(869): CBaseController->renderFile('C:\OpenServer\d...', Array, true)
+#4 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(782): CController->renderPartial('edit', Array, true)
+#5 C:\OpenServer\domains\yii-blog.test\blog\protected\modules\blogrecord\controllers\DefaultController.php(89): CController->render('edit', Array)
+#6 C:\OpenServer\domains\yii-blog.test\framework\web\actions\CInlineAction.php(49): DefaultController->actionEdit()
+#7 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\OpenServer\domains\yii-blog.test\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 C:\OpenServer\domains\yii-blog.test\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 C:\OpenServer\domains\yii-blog.test\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\OpenServer\domains\yii-blog.test\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\OpenServer\domains\yii-blog.test\framework\web\CWebApplication.php(282): CController->run('edit')
+#16 C:\OpenServer\domains\yii-blog.test\framework\web\CWebApplication.php(141): CWebApplication->runController('blogrecord/defa...')
+#17 C:\OpenServer\domains\yii-blog.test\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#18 C:\OpenServer\domains\yii-blog.test\blog\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/blog/index.php/blogrecord/default/edit/3
+---
+2016/03/26 15:30:34 [error] [php] Trying to get property of non-object (C:\OpenServer\domains\yii-blog.test\blog\protected\components\WebUser.php:23)
+Stack trace:
+#0 C:\OpenServer\domains\yii-blog.test\framework\web\CBaseController.php(180): SiteController->createWidget()
+#1 C:\OpenServer\domains\yii-blog.test\blog\protected\views\site\index.php(11): SiteController->widget()
+#2 C:\OpenServer\domains\yii-blog.test\framework\web\CBaseController.php(126): require()
+#3 C:\OpenServer\domains\yii-blog.test\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#4 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(869): SiteController->renderFile()
+#5 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(782): SiteController->renderPartial()
+#6 C:\OpenServer\domains\yii-blog.test\blog\protected\controllers\SiteController.php(32): SiteController->render()
+#7 C:\OpenServer\domains\yii-blog.test\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#8 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(286): SiteController->runAction()
+#10 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#11 C:\OpenServer\domains\yii-blog.test\framework\web\CWebApplication.php(282): SiteController->run()
+#12 C:\OpenServer\domains\yii-blog.test\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\OpenServer\domains\yii-blog.test\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 C:\OpenServer\domains\yii-blog.test\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/
+in C:\OpenServer\domains\yii-blog.test\blog\protected\components\WebUser.php (23)
+in C:\OpenServer\domains\yii-blog.test\blog\protected\extensions\widgets\CPostList.php (9)
+in C:\OpenServer\domains\yii-blog.test\blog\protected\views\site\index.php (11)
+2016/03/26 15:31:04 [error] [php] Trying to get property of non-object (C:\OpenServer\domains\yii-blog.test\blog\protected\components\WebUser.php:23)
+Stack trace:
+#0 C:\OpenServer\domains\yii-blog.test\framework\web\CBaseController.php(95): DefaultController->renderInternal()
+#1 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(869): DefaultController->renderFile()
+#2 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(782): DefaultController->renderPartial()
+#3 C:\OpenServer\domains\yii-blog.test\blog\protected\modules\blogrecord\controllers\DefaultController.php(31): DefaultController->render()
+#4 C:\OpenServer\domains\yii-blog.test\framework\web\actions\CInlineAction.php(49): DefaultController->actionIndex()
+#5 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\OpenServer\domains\yii-blog.test\framework\web\filters\CFilterChain.php(133): DefaultController->runAction()
+#7 C:\OpenServer\domains\yii-blog.test\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#9 C:\OpenServer\domains\yii-blog.test\framework\web\filters\CInlineFilter.php(58): DefaultController->filterAccessControl()
+#10 C:\OpenServer\domains\yii-blog.test\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#11 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(265): DefaultController->runActionWithFilters()
+#13 C:\OpenServer\domains\yii-blog.test\framework\web\CWebApplication.php(282): DefaultController->run()
+#14 C:\OpenServer\domains\yii-blog.test\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#15 C:\OpenServer\domains\yii-blog.test\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 C:\OpenServer\domains\yii-blog.test\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/index.php/blogrecord/default
+in C:\OpenServer\domains\yii-blog.test\blog\protected\components\WebUser.php (23)
+in C:\OpenServer\domains\yii-blog.test\blog\protected\modules\blogrecord\views\default\index.php (10)
+in C:\OpenServer\domains\yii-blog.test\blog\protected\modules\blogrecord\controllers\DefaultController.php (31)
+2016/03/26 15:33:14 [error] [php] Trying to get property of non-object (C:\OpenServer\domains\yii-blog.test\blog\protected\components\WebUser.php:24)
+Stack trace:
+#0 C:\OpenServer\domains\yii-blog.test\framework\web\CBaseController.php(95): DefaultController->renderInternal()
+#1 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(869): DefaultController->renderFile()
+#2 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(782): DefaultController->renderPartial()
+#3 C:\OpenServer\domains\yii-blog.test\blog\protected\modules\blogrecord\controllers\DefaultController.php(31): DefaultController->render()
+#4 C:\OpenServer\domains\yii-blog.test\framework\web\actions\CInlineAction.php(49): DefaultController->actionIndex()
+#5 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\OpenServer\domains\yii-blog.test\framework\web\filters\CFilterChain.php(133): DefaultController->runAction()
+#7 C:\OpenServer\domains\yii-blog.test\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#9 C:\OpenServer\domains\yii-blog.test\framework\web\filters\CInlineFilter.php(58): DefaultController->filterAccessControl()
+#10 C:\OpenServer\domains\yii-blog.test\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#11 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\OpenServer\domains\yii-blog.test\framework\web\CController.php(265): DefaultController->runActionWithFilters()
+#13 C:\OpenServer\domains\yii-blog.test\framework\web\CWebApplication.php(282): DefaultController->run()
+#14 C:\OpenServer\domains\yii-blog.test\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#15 C:\OpenServer\domains\yii-blog.test\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 C:\OpenServer\domains\yii-blog.test\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/index.php/blogrecord/default
+in C:\OpenServer\domains\yii-blog.test\blog\protected\components\WebUser.php (24)
+in C:\OpenServer\domains\yii-blog.test\blog\protected\modules\blogrecord\views\default\index.php (10)
+in C:\OpenServer\domains\yii-blog.test\blog\protected\modules\blogrecord\controllers\DefaultController.php (31)
